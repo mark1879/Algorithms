@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:LeetCode/LeetCode.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BSTree/BSTree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RBTree/RBTree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SkipList/SkipList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BinarySearch/BinarySearch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Recursion/Recursion.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Queue/Queue.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Sort/Sort.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Stack/Stack.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Heap/Heap.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HuffManTree/HuffManTree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Utils/Utils.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CircularLinkedList/CircularLinkedList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkedList/LinkedList.xcodeproj">
+   </FileRef>
+</Workspace>
