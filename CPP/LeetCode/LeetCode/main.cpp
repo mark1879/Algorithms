@@ -11,6 +11,12 @@
 #include "two_sum.hpp"
 #include "three_sum.hpp"
 #include "add_two_numbers.hpp"
+#include <set>
+#include <unordered_set>
+#include <algorithm>
+#include <map>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     
@@ -23,7 +29,7 @@ int main(int argc, const char * argv[]) {
     
 //    std::cout << (1 | 0 | 2 | 4) << std::endl;
     
-    AddTwoNumbers::TestSolution1();
+//    AddTwoNumbers::TestSolution1();
     
     return 0;
 }

@@ -13,6 +13,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <unordered_set>
+#include <algorithm>
 
 using namespace std;
 
@@ -21,12 +23,43 @@ class LengthOfLongestSubString
 public:
     static int Solution1(string s)
     {
-        size_t size = s.size();
-        size_t longest = 0, start = 0;
-        size_t end = start + 1;
+        vector<char> vec;
+        int max_length = 0;
         
+        for (auto c : s){
+            auto ret = std::find(vec.begin(), vec.end(), c);
+            if (ret == vec.end()){
+                vec.push_back(c);
+            }else{
+                max_length = max(max_length, (int)vec.size());
+                vec.erase(vec.begin(), ++ret);
+                vec.push_back(c);
+            }
+        }
         
-        return int(longest);
+        return max(max_length, (int)vec.size());
+    }
+    
+    
+    // official solution：sliding window + unordered_set
+    static int Solution2(string s){
+        unordered_set<char> occ;
+        int rp = -1, max_length = 0;
+        
+        for (int i = 0, size = (int)s.size(); i < size; i++){
+            if (i != 0){
+                occ.erase(s[i -1]);
+            }
+            
+            while ((rp + 1 < size) && !occ.count(s[rp + 1])){
+                occ.insert(s[rp + 1]);
+                ++rp;
+            }
+            
+            max_length = max(max_length, (rp - i + 1));
+        }
+        
+        return max_length;
     }
     
 };

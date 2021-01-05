@@ -18,7 +18,8 @@ public:
     static vector<int> Solution1(const vector<int>& nums, int target){
         unordered_map<int, int> hash_table;
         
-        int size = nums.size();
+        size_t size = nums.size();
+        
         for (int i = 0; i < size; i++){
             auto it = hash_table.find(target - nums[i]);
             if (it != hash_table.end()){
@@ -40,7 +41,7 @@ public:
     }
     
     static vector<int> Solution2(const vector<int>& nums, int target){
-        int size = nums.size();
+        size_t size = nums.size();
         for (int i = 0; i < (size - 1); i++){
             for (int j = i + 1; j < size; j++){
                 if (nums[i] + nums[j] == target){
