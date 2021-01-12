@@ -15,6 +15,7 @@
 #include <vector>
 #include <unordered_set>
 #include <algorithm>
+#include <unordered_map>
 
 using namespace std;
 
@@ -59,6 +60,23 @@ public:
             max_length = max(max_length, (rp - i + 1));
         }
         
+        return max_length;
+    }
+    
+    static int Solution3(string s){
+        unordered_map<char, int> occ;
+        int max_length = 0;
+        int lp = 0;
+        
+        for (int i = 0, size = (int)s.size(); i < size; i++){
+            if (occ.find(s[i]) != occ.end() && occ[s[i]] >= lp){
+                lp = occ[s[i]] + 1;
+            }
+            
+            occ[s[i]] = i;
+            max_length = max(max_length, (i - lp + 1));
+        }
+     
         return max_length;
     }
     

@@ -33,6 +33,7 @@
 		4D2BE656256B3DD400D5CCA1 /* three_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = three_sum.hpp; sourceTree = "<group>"; };
 		4DB7E9072579C62A00E97117 /* add_two_numbers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = add_two_numbers.hpp; sourceTree = "<group>"; };
 		4DC0F8BE255B729000484B3A /* two_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = two_sum.hpp; sourceTree = "<group>"; };
+		4DD61CC225A9376B000738BD /* find_median_sorted_arrays.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = find_median_sorted_arrays.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 				4DC0F8BE255B729000484B3A /* two_sum.hpp */,
 				4D2BE656256B3DD400D5CCA1 /* three_sum.hpp */,
 				4DB7E9072579C62A00E97117 /* add_two_numbers.hpp */,
+				4DD61CC225A9376B000738BD /* find_median_sorted_arrays.hpp */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
