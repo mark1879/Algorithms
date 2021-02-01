@@ -15,6 +15,10 @@ using  namespace std;
 class ZTransformation{
 public:
     static string Solution1(string s, int num_rows){
+        if (s.size() == 0){
+            return s;
+        }
+        
         string z_str;
         int size = (int)s.size();
         
